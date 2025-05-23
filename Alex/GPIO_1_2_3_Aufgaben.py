@@ -39,8 +39,7 @@ try:
         #Temperatursensor(Aufgabe3)
         indoor = data.read()
         if indoor.is_valid():   
-            print ("temperatur:" + str(indoor.temperature)) 
-            print("Luftfeuchtigkeit:" + str(indoor.humidity))
+            print ("Temperatur:" + str(indoor.temperature) + "°C") 
             x = indoor.temperature
             if x >= 25.0:
                 GPIO.output(22,GPIO.HIGH)
